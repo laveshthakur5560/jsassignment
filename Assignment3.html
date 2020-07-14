@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get the current date</title>
+</head>
+<body>
+    <script>
+    var today = new Date();
+    var today1 = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var dd = String(today1.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var mm = String(today1.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+var yyyy = today1.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy + ',' ;today1 = mm + '-' + dd + '-' + yyyy;
+document.write(today);
+document.write(today1);
+    </script>
+    
+</body>
+</html>
